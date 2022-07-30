@@ -1,0 +1,204 @@
+
+/* x-axis centered */
+
+.x-centered{
+  transform: translateX(85px);
+}
+
+  /* Star logo */
+  .logo{
+    width: 200px;
+    height: 200px;
+  }
+
+  /* End logo */
+
+  /* Start navbar */
+
+  .nav-container{
+    position: sticky;
+    top: 10px;
+    z-index: 3;
+    opacity: 1;
+    background-color: #fff;
+  }
+
+  .navbar {
+    background-color: #000000;
+    opacity: .7;
+  }
+  
+
+  .navbar .navbar-nav li a{
+    color: #fff;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .navbar .navbar-nav .nav-link .active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover{
+    background-color: #D9D9D9;
+    opacity: .5;
+    color: #000000;
+  }
+
+  /* Start icon */
+
+  .navbar .container .navbar-toggler > i{
+    border-style: none;
+    color: #fff;
+  }
+
+  /* End icon */
+
+  /* End navbar */
+
+
+  /* Start Hero section */
+
+.hero > h1{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: #fff;
+}
+
+.hero > p{
+  position: absolute;
+  top: 270px;
+  left: 100px;
+  color: #fff;
+}
+
+
+#hero-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+  /* End Hero section */
+
+/* Start About Me Section */
+
+
+.about-me-content{
+ transform: translate(-5%);
+ top: 0px;
+ color: #fff;
+}
+
+
+
+
+  .about-img-section{
+    transform: translate(150px,50px);
+  }
+
+  .about-content-section{
+    transform: translate(10px,80px);
+  }
+
+  .about-section .about-content-section > h2{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .about-section .about-content-section > p{
+    text-align: justify;
+  }
+
+  @media (max-width:767px){
+    .about-section .about-content-section h2,p{
+      display: none;
+    };  
+  }
+
+  @media (max-width:767px){
+    .about-section .about-img-section img{
+      display: none;
+    };  
+  }
+
+
+/* End About Me Section */
+
+
+/* Strat Skills section */
+
+.skills .col-md-4 > img{
+  width: 100px;
+  height: 100px;
+}
+/* End Skills section */
+
+
+/* Strat Services */
+.services{
+  background-color: #D9D9D9;
+}
+/* End Services */
+
+/* Strat Contact-me */
+.contact-me{
+  background-color: #D9D9D9;
+}
+
+
+#social-accounts{
+  border-left: 1px solid #000000;
+}
+
+@media (max-width:767px)
+{
+  .contact-me > #social-accounts{
+   display: none;
+  }
+}
+
+
+/* End Contact-me */
+
+/* Strat my-portfolio section */
+.my-portfolio{
+  background-color: #D9D9D9;
+}
+
+.my-portfolio .card > img{
+  width: 413px;
+  height: 200px;
+}
+
+.my-portfolio .card > img:hover{
+  background-color: #000000;
+  opacity: .5;
+}
+
+
+
+/* End my-portfolio section */
+
+
+/* Footer section */
+
+.footer-section{
+  background-color: #000000;
+  opacity: .7;
+  color: #fff;
+}
+
+@media (max-width:600px){
+  .footer-section > p{
+    display: inline-block;
+  }
+
+}
+
+
+
+/* Footer section */
+

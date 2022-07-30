@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css"
+    />
+  </head>
+  <body>
+    <center>
+      <header class="my-3">
+        <img src="./images/logo.png" class="rounded-circle logo" alt="logo" />
+      </header>
+    </center>
+    <div class="container nav-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <!-- <img
+              src="./images/logo.png"
+              class="rounded-circle border border-50 logo"
+              alt=""
+              style="width: 50px; height: 50px"
+            /> -->
+          </a>
+          <button
+            class="navbar-toggler text-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars fa-3x"></i>
+            <!-- <i class="fa-solid fa-chart-column fa-3x"></i> -->
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row justify-content-around"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Start Hero section  -->
+    <div id="home" class="container mt-3 position-relative hero">
+      <img src="./images/background2.jpg" alt="Hero Image" id="hero-image" />
+      <h1 class="d-md-block d-sm-none d-xs-none">Welcome Everyone</h1>
+      <p class="d-lg-block d-sm-none d-xs-none">
+        I ‘m Jafer Al-Dakhily, and this my portfolio website, which is
+        describing what I can do.
+      </p>
+    </div>
+
+    <!-- End Hero section -->
+
+    <!-- Start About me -->
+    <!-- <div id="about" class="container about-section mt-3">
+      <div class="row">
+        <div class="col-md-6 about-img-section">
+          <img src="./images/me.jpg" class="border rounded w-50 h-75" alt="" />
+        </div>
+        <div class="col-md-6 about-content-section text-white">
+          <h2>About Me</h2>
+          <p class="lead d-lg-block d-md-none d-sm-none d-xs-none">
+            My name's Jafer Al-dakhily, I am 25 years old, and I have a
+            bachelor's degree in Business Information Technology from
+            <strong>The University of Jordan</strong>, and I’m a
+            <strong>Software Development Engineer</strong>, likes a new
+            challenges, and try to keep up leaning a new technologies to give
+            people simple solutions for a complex problems.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <div id="about" class="container about-section mt-3 position-relative">
+      <img src="./images/bg-3.webp" class="img-fluid" alt="" />
+      <div class="row position-absolute about-me-content">
+        <div class="col-md-6 about-img-section">
+          <img src="./images/me.jpg" class="border rounded w-50 h-75" alt="" />
+        </div>
+        <div class="col-md-6 about-content-section">
+          <h2>About Me</h2>
+          <p class="lead d-lg-block d-md-none d-sm-none d-xs-none">
+            My name's Jafer Al-dakhily, <b>I am 25 years</b> old, and I have a
+            bachelor's degree in Information Technology from
+            <strong>The University of Jordan</strong>, and I’m a
+            <strong>Software Development Engineer</strong>, likes a new
+            challenges, and try to keep up leaning a new technologies to give
+            people simple solutions for a complex problems.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End About me -->
+
+    <!-- Start Portfolio -->
+    <section id="portfolio" class="my-portfolio mt-5">
+      <h2 style="transform: translateX(43%)" class="pt-4">My Portfolio</h2>
+      <div class="container">
+        <!-- First row -->
+        <div class="row my-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/inventory-system.png"
+                data-work="application"
+                alt=""
+              />
+              <div class="card-body"><h5>Inventory Management System</h5></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/e-commerce-laravel.webp"
+                data-work="application"
+                alt=""
+              />
+              <div class="card-body"><h5>E-Commerce 1</h5></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./images/e-commerce-react.jpeg" alt="" />
+              <div class="card-body"><h5>E-Commerce 2</h5></div>
+            </div>
+          </div>
+        </div>
+        <!-- Second row -->
+        <div class="row my-5" id="row2">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="./images/blog1.png" alt="" />
+              <div class="card-body"><h5>Blog 1</h5></div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card position-relative">
+              <!-- <i class="fa-solid fa-plus fa-2x"></i> -->
+              <img src="./images/blog2.png" alt="" />
+              <div class="card-body"><h5>Blog 2</h5></div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="./images/wedding-planner.jpg"
+                data-work="application"
+                alt=""
+              />
+              <div class="card-body"><h5>wedding Planner</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+            <button class="btn btn-danger mb-3 rounded-pill">See More</button>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- Strat Skills -->
+    <section id="skills" class="skills">
+      <h2
+        class="mt-5"
+        style="
+          font-weight: bold;
+          position: relative;
+          transform: translateX(43%);
+        "
+      >
+        My Skills
+      </h2>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 x-centered">
+            <h3>HTML 5</h3>
+            <img
+              src="./images/html5.png"
+              alt="HTML 5"
+              class="w-25 border rounded"
+            />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped bg-danger"
+                role="progressbar"
+                aria-label="Danger striped example"
+                style="width: 90%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 90 %</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 x-centered">
+            <h3>CSS 3</h3>
+            <img
+              src="./images/css.png"
+              alt="CSS 3"
+              class="w-25 border rounded"
+            />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-label="Danger striped example"
+                style="width: 70%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 70 %</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 x-centered">
+            <h3>JavaScript</h3>
+            <img
+              src="./images/js.png"
+              alt="JavaScript"
+              class="w-25 border rounded"
+            />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                role="progressbar"
+                aria-label="Danger striped example"
+                style="width: 80%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 80 %</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second row -->
+        <div class="row mt-5">
+          <div class="col-md-4 x-centered">
+            <h3>Bootstrap</h3>
+            <img
+              src="./images/bootstrap.png"
+              alt="bootstrap"
+              class="border rounded"
+            />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                aria-label="Default striped example"
+                style="width: 80%"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 80 %</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 x-centered">
+            <h3>React JS</h3>
+            <img src="./images/react.png" alt="react" class="border rounded" />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped bg-success"
+                role="progressbar"
+                aria-label="Success striped example"
+                style="width: 60%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 60 %</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 x-centered">
+            <h3>Laravel</h3>
+            <img
+              src="./images/laravel.jpg"
+              alt="laravel"
+              class="border rounded"
+            />
+            <div class="progress mt-3 w-75 w-sm-50 d-xs-none">
+              <div
+                class="progress-bar progress-bar-striped bg-danger"
+                role="progressbar"
+                aria-label="Danger striped example"
+                style="width: 89%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <b> 89 %</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- Strat Services -->
+    <section id="services" class="services mt-5 py-5">
+      <h2 style="transform: translateX(43%)">My Services</h2>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 x-centered">
+            <i class="fa-solid fa-marker fa-4x mb-5"></i>
+            <h3>Web Design</h3>
+          </div>
+          <div class="col-md-4 x-centered">
+            <i class="fa-solid fa-circle-question fa-4x mb-5"></i>
+            <h3>Technical Support</h3>
+          </div>
+          <div class="col-md-4 x-centered">
+            <i class="fa-solid fa-database fa-4x mb-5"></i>
+            <h3>DBMS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start Testimonials -->
+    <section id="testimonials" class="mt-5 testimonials">
+      <h2 style="transform: translateX(43%)" class="mb-5">My Testimonials</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/alex.jpg"
+                style="height: 230px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alex</h5>
+                <h5 class="card-title"><b>Software Engineer</b></h5>
+                <p class="card-text">He's a fast learner.</p>
+                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/meari2.webp"
+                style="height: 230px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meari</h5>
+                <h5 class="card-title"><b>Human Resource</b></h5>
+                <p class="card-text">Problem solver person.</p>
+                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/adam2.jpg"
+                style="height: 230px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adam</h5>
+                <h5 class="card-title">Software Archutecture.</h5>
+                <p class="card-text">He is a Creative person.</p>
+                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+
+    <!-- Strat Contact me -->
+    <section id="contact" class="contact-me py-3 mt-3">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Contact Me</h2>
+            <form action="#">
+              <input
+                type="text"
+                placeholder="Your name"
+                class="form-control my-3"
+              />
+              <input
+                type="email"
+                placeholder="Your email"
+                class="form-control my-3"
+              />
+              <textarea
+                type="text"
+                placeholder="Your message"
+                class="form-control my-3"
+                rows="10"
+              ></textarea>
+              <button class="btn btn-danger rounded-pill">Send me</button>
+            </form>
+          </div>
+          <div
+            class="col-md-6 text-center text-align-justify"
+            id="social-accounts"
+          >
+            <h2>Follow Me</h2>
+            <!-- <div class="row my-3">
+              <div class="col-md-6"><b>Gmail</b></div>
+              <div class="col-md-6">
+                <i class="fa-solid fa-envelope fa-3x"></i>
+              </div>
+            </div> -->
+            <div class="row my-3">
+              <div class="col-md-6"><b>Facebook</b></div>
+              <div class="col-md-6">
+                <a
+                  href="https://www.facebook.com/jafer.aldkly/"
+                  target="_blank"
+                >
+                  <i
+                    style="color: #1877f2"
+                    class="fa-brands fa-facebook fa-3x"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-md-6"><b>LinkedIn</b></div>
+              <div class="col-md-6">
+                <a
+                  href="https://www.linkedin.com/in/jafer-al-dakhily-3b2a141b1/"
+                  target="_blank"
+                >
+                  <i
+                    style="color: #004182"
+                    class="fa-brands fa-linkedin fa-3x"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-md-6"><b>GitHub</b></div>
+              <div class="col-md-6">
+                <a
+                  href="https://github.com/Jafer-Aldakhily"
+                  style="color: #000"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact me -->
+
+    <!-- Strat Footer -->
+    <footer class="py-5 text-center footer-section">
+      <p>Copyright &copy; <b>Jafer Al-Dakhily</b> 2022</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
