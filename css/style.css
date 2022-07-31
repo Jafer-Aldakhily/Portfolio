@@ -82,6 +82,13 @@
   height: 500px;
 }
 
+.hero .hero-h1,.hero-p{
+  color: #F5EDDC;
+  text-shadow: 1px 1px #fff;
+}
+
+
+
   /* End Hero section */
 
 /* Start About Me Section */
@@ -107,22 +114,45 @@
   .about-section .about-content-section > h2{
     font-size: 40px;
     font-weight: bold;
+    color: #F5EDDC;
+    text-shadow: 1px 1px #fff;
   }
 
   .about-section .about-content-section > p{
     text-align: justify;
+    color: #F5EDDC;
+    text-shadow: 1px 1px #fff;
+  }
+
+  .about-section #my-image{
+    width: 330px;
+    height: 330px;
+    border-radius: 4px;
   }
 
   @media (max-width:767px){
-    .about-section .about-content-section h2,p{
+    .about-section .about-content-section h2{
       display: none;
     };  
   }
 
   @media (max-width:767px){
-    .about-section .about-img-section img{
-      display: none;
-    };  
+    .about-section .about-img-section #my-image{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: -40px;
+      left: 50px;
+    }
+  }
+
+  @media (max-width:767px){
+    .about-section .about-content-section p{
+      font-size: 12px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
   }
 
 
@@ -138,11 +168,6 @@
 /* End Skills section */
 
 
-/* Strat Services */
-.services{
-  background-color: #D9D9D9;
-}
-/* End Services */
 
 /* Strat Contact-me */
 .contact-me{
@@ -154,11 +179,10 @@
   border-left: 1px solid #000000;
 }
 
-@media (max-width:767px)
-{
-  .contact-me > #social-accounts{
-   display: none;
-  }
+@media (max-width:600px){
+  .contact-me a > i {
+    padding: 10px 0;
+  }  
 }
 
 
@@ -166,7 +190,8 @@
 
 /* Strat my-portfolio section */
 .my-portfolio{
-  background-color: #D9D9D9;
+    color: #F5EDDC;
+    text-shadow: 1px 1px #fff;
 }
 
 .my-portfolio .card > img{

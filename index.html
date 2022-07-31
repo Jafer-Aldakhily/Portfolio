@@ -20,28 +20,22 @@
       rel="stylesheet"
       href="./fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css"
     />
+    <!-- telphone meta tag -->
+    <meta name="format-detection" content="telephone=yes" />
   </head>
   <body>
-    <!-- Start Logo section -->
-    <center>
-      <header class="my-3">
-        <img src="./images/logo.png" class="rounded-circle logo" alt="logo" />
-      </header>
-    </center>
-    <!-- End Logo section -->
-
     <!-- Strat Navbar section -->
-    <div class="container nav-container">
+    <div class="container-fluid nav-container">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <!-- <img
+            <img
               src="./images/logo.png"
-              class="rounded-circle border border-50 logo"
+              class="rounded-circle logo ms-3"
               alt=""
               style="width: 50px; height: 50px"
-            /> -->
+            />
           </a>
           <button
             class="navbar-toggler text-dark"
@@ -57,7 +51,7 @@
             <!-- <i class="fa-solid fa-chart-column fa-3x"></i> -->
           </button>
           <div
-            class="collapse navbar-collapse flex-row justify-content-around"
+            class="collapse navbar-collapse flex-row justify-content-end"
             id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
@@ -76,12 +70,6 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
@@ -95,8 +83,8 @@
     <!-- Start Hero section  -->
     <div id="home" class="container mt-3 position-relative hero">
       <img src="./images/background2.jpg" alt="Hero Image" id="hero-image" />
-      <h1 class="d-md-block d-sm-none d-xs-none">Welcome Everyone</h1>
-      <p class="d-lg-block d-sm-none d-xs-none">
+      <h1 class="d-md-block d-sm-none d-xs-none hero-h1">Welcome Everyone</h1>
+      <p class="d-lg-block d-sm-none d-xs-none hero-p">
         I ‘m Jafer Al-Dakhily, and this my portfolio website, which is
         describing what I can do.
       </p>
@@ -109,7 +97,7 @@
       <img src="./images/bg-3.webp" class="img-fluid" alt="" />
       <div class="row position-absolute about-me-content">
         <div class="col-md-6 about-img-section">
-          <img src="./images/me.jpg" class="border rounded w-50 h-75" alt="" />
+          <img src="./images/me.jpg" alt="" id="my-image" />
         </div>
         <div class="col-md-6 about-content-section">
           <h2>About Me</h2>
@@ -127,35 +115,41 @@
     <!-- End About me section -->
 
     <!-- Start Portfolio section -->
-    <section id="portfolio" class="my-portfolio mt-5">
-      <h2 class="pt-4 text-center">My Portfolio</h2>
+    <section id="portfolio" class="my-portfolio mt-5 bg-secondary">
+      <h2 class="pt-4 text-center">My Projects</h2>
       <div class="container">
         <!-- First row -->
         <div class="row my-5">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="card">
               <img
                 src="./images/inventory-system.png"
                 data-work="application"
                 alt=""
               />
-              <div class="card-body"><h5>Inventory Management System</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>Inventory Management System</h5>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <div class="card">
               <img
                 src="./images/e-commerce-laravel.webp"
                 data-work="application"
                 alt=""
               />
-              <div class="card-body"><h5>E-Commerce 1</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>E-Commerce 1</h5>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
               <img src="./images/e-commerce-react.jpeg" alt="" />
-              <div class="card-body"><h5>E-Commerce 2</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>E-Commerce 2</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -164,13 +158,17 @@
           <div class="col-md-4 mb-3">
             <div class="card">
               <img src="./images/blog1.png" alt="" />
-              <div class="card-body"><h5>Blog 1</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>Blog 1</h5>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card position-relative">
               <img src="./images/blog2.png" alt="" />
-              <div class="card-body"><h5>Blog 2</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>Blog 2</h5>
+              </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
@@ -180,7 +178,9 @@
                 data-work="application"
                 alt=""
               />
-              <div class="card-body"><h5>wedding Planner</h5></div>
+              <div class="card-body bg-white text-secondary">
+                <h5>wedding Planner</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -330,160 +330,37 @@
     </section>
     <!-- End Skills section -->
 
-    <!-- Strat Services section -->
-    <section id="services" class="services mt-5 py-5">
-      <h2 class="text-center">My Services</h2>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <i class="fa-solid fa-marker fa-4x mb-5"></i>
-            <h3>Web Design</h3>
-          </div>
-          <div class="col-md-4 text-center">
-            <i class="fa-solid fa-circle-question fa-4x mb-5"></i>
-            <h3>Technical Support</h3>
-          </div>
-          <div class="col-md-4 text-center">
-            <i class="fa-solid fa-database fa-4x mb-5"></i>
-            <h3>DBMS</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services section -->
-
-    <!-- Start Testimonials section -->
-    <section id="testimonials" class="mt-5 testimonials">
-      <h2 class="mb-5 text-center">My Testimonials</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col x-centered">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./images/alex.jpg"
-                style="height: 230px"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Alex</h5>
-                <h5 class="card-title"><b>Software Engineer</b></h5>
-                <p class="card-text">He's a fast learner.</p>
-                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col x-centered">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./images/meari2.webp"
-                style="height: 230px"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Meari</h5>
-                <h5 class="card-title"><b>Human Resource</b></h5>
-                <p class="card-text">Problem solver person.</p>
-                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col x-centered">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./images/adam2.jpg"
-                style="height: 230px"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Adam</h5>
-                <h5 class="card-title">Software Archutecture.</h5>
-                <p class="card-text">He is a Creative person.</p>
-                <a href="#" class="btn btn-primary rounded-pill">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Testimonials section -->
-
     <!-- Strat Contact me section -->
     <section id="contact" class="contact-me py-3 mt-3">
-      <div class="container mt-5">
+      <h2 class="text-center">Follow Me</h2>
+      <div class="container my-5 text-center">
         <div class="row">
-          <div class="col-md-6">
-            <h2>Contact Me</h2>
-            <form action="#">
-              <input
-                type="text"
-                placeholder="Your name"
-                class="form-control my-3"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your email"
-                class="form-control my-3"
-                required
-              />
-              <textarea
-                type="text"
-                placeholder="Your message"
-                class="form-control my-3"
-                rows="10"
-                required
-              ></textarea>
-              <button class="btn btn-danger rounded-pill">Send me</button>
-            </form>
+          <div class="col-md-3">
+            <a href="https://www.facebook.com/jafer.aldkly/" target="_blank">
+              <i style="color: #1877f2" class="fa-brands fa-facebook fa-3x"></i>
+            </a>
           </div>
-          <div
-            class="col-md-6 text-center text-align-justify"
-            id="social-accounts"
-          >
-            <h2>Follow Me</h2>
-            <div class="row my-3">
-              <div class="col-md-6"><b>Facebook</b></div>
-              <div class="col-md-6">
-                <a
-                  href="https://www.facebook.com/jafer.aldkly/"
-                  target="_blank"
-                >
-                  <i
-                    style="color: #1877f2"
-                    class="fa-brands fa-facebook fa-3x"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-md-6"><b>LinkedIn</b></div>
-              <div class="col-md-6">
-                <a
-                  href="https://www.linkedin.com/in/jafer-al-dakhily-3b2a141b1/"
-                  target="_blank"
-                >
-                  <i
-                    style="color: #004182"
-                    class="fa-brands fa-linkedin fa-3x"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <div class="row my-3">
-              <div class="col-md-6"><b>GitHub</b></div>
-              <div class="col-md-6">
-                <a
-                  href="https://github.com/Jafer-Aldakhily"
-                  style="color: #000"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github fa-3x"></i>
-                </a>
-              </div>
-            </div>
+          <div class="col-md-3">
+            <a
+              href="https://www.linkedin.com/in/jafer-al-dakhily-3b2a141b1/"
+              target="_blank"
+            >
+              <i style="color: #004182" class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a
+              href="https://github.com/Jafer-Aldakhily"
+              style="color: #000"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github fa-3x"></i>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="tel:+962-778-084-963" class="text-dark">
+              <i class="fa-solid fa-mobile fa-3x"></i>
+            </a>
           </div>
         </div>
       </div>
