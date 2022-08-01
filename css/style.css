@@ -142,15 +142,14 @@
       height: 80px;
       border-radius: 50%;
       position: absolute;
-      top: -40px;
-      left: 50px;
+      transform: translate(120%,-50%);
     }
   }
 
   @media (max-width:767px){
     .about-section .about-content-section p{
       font-size: 12px;
-      margin-top: 20px;
+      margin-top: 40px;
       padding: 0 20px;
     }
   }
@@ -182,6 +181,7 @@
 @media (max-width:600px){
   .contact-me a > i {
     padding: 10px 0;
+    margin-bottom: 20px;
   }  
 }
 
@@ -194,9 +194,9 @@
     text-shadow: 1px 1px #fff;
 }
 
+
 .my-portfolio .card > img{
-  width: 413px;
-  height: 200px;
+  height: 200px; 
 }
 
 .my-portfolio .card > img:hover{
@@ -227,4 +227,15 @@
 
 
 /* Footer section */
+
+
+/* Start Some media query for responsive */
+@media (max-width:450px){
+  body{
+    width:calc(360px + 180px);
+  }
+};
+
+
+/* End Some media query for responsive */
 
