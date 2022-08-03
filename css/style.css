@@ -67,14 +67,14 @@
 
 .hero > h1{
   position: absolute;
-  top: 200px;
-  left: 100px;
+  top: 30%;
+  left: 10%;
 }
 
 .hero > p{
   position: absolute;
-  top: 270px;
-  left: 100px;
+  top: 50%;
+  left: 10%;
 }
 
 
@@ -97,21 +97,11 @@
 /* Start About Me Section */
 
   .about-me-content{
-  transform: translate(-5%);
-  top: 0px;
+  top: 10%;
   color: #fff;
   }
 
 
-
-
-  .about-img-section{
-    transform: translate(150px,50px);
-  }
-
-  .about-content-section{
-    transform: translate(10px,80px);
-  }
 
   .about-section .about-content-section > h2{
     font-size: 40px;
@@ -156,8 +146,15 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      position: absolute;
-      transform: translate(120%,-50%);
+    }
+  }
+  /* Mobile about-img-section */
+
+  @media (max-width:767px){
+    .about-section .about-img-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -168,17 +165,25 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      position: absolute;
-      transform: translate(210%,-30%);
+    }
+  }
+
+  /* About-img-section Ipad */
+  @media (min-width:767px) and (max-width:900px){
+    .about-section .about-img-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
     /* Style p in Mobile */
   
     @media (max-width:767px){
     .about-section .about-content-section p{
-      font-size: 12px;
-      margin-top: 40px;
-      padding: 0 20px;
+       font-size: 12px;
+        margin-top: 5%;
+        box-sizing: border-box;
+        padding: 0 3%;
     }
   }
 
@@ -187,9 +192,27 @@
     @media (min-width:767px) and (max-width:900px) {
       .about-section .about-content-section > p{
         font-size: 16px;
-        margin-top: 40px;
-        padding: 0 20px;
-        margin-left: -342px;
+        margin-top: 5%;
+        box-sizing: border-box;
+        padding: 0 3%;
+      }
+    }
+
+    /* Finaly in large screen desktop */
+    /* Image */
+    @media (min-width:901px) {
+      .about-section .about-me-content .about-img-section{
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    /* Content */
+    @media (min-width:901px) {
+      .about-section .about-me-content .about-content-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
 
