@@ -79,9 +79,20 @@
   height: 500px;
 }
 
-.hero .hero-h1,.hero-p{
-  color: #16003B;
+.hero .hero-h1{
+  /* color: #16003B; */
+  color: #576F72;
   text-shadow: 1px 1px #fff;
+}
+
+.hero .hero-p{
+  width: 50%;
+  padding: 1%;
+  background-color: #576F72;
+  opacity: .7;
+  color: #fff;
+  text-shadow: 1px 1px #16003B;
+  border-radius: 5px 5px 5px 5px;
 }
 
 
@@ -216,6 +227,10 @@
 
 /* Strat Skills section */
 
+.skills{
+  color:#16003B;
+}
+
 .skills .col-md-4 > img{
   width: 100px;
   height: 100px;
@@ -246,19 +261,19 @@
 
 /* Strat my-portfolio section */
 .my-portfolio{
-    color: #16003B;
+    color:#16003B;
     text-shadow: 1px 1px #fff;
 }
 
 
 /* I will back in  */
 .my-portfolio .card  > img{
-  height: 200px;
+  height: 10%;
 }
 
 .my-portfolio .card a > img{
   background-color: #000000;
-  opacity: .5;
+  opacity: .8;
   transition: all .7s; 
 }
 
