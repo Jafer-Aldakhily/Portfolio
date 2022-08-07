@@ -58,17 +58,20 @@
 
 
   /* Start Hero section */
+.hero{  
+  text-align: justify;
+  }
 
 .hero > h1{
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 15%;
+  left: 5%;
 }
 
 .hero > p{
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 25%;
+  left: 5%;
 }
 
 
@@ -88,11 +91,31 @@
 .hero .hero-p{
   width: 50%;
   padding: 1%;
-  background-color: #576F72;
-  opacity: .7;
-  color: #fff;
-  text-shadow: 1px 1px #16003B;
-  border-radius: 5px 5px 5px 5px;
+  color: #576F72;
+  text-shadow: 1px 1px #fff;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* H1 in small screens */
+@media (max-width:767px) {
+  .hero > h1{
+    position: absolute;
+    top: 30%;
+    left: 19%;
+  }
+  
+}
+
+/* P in Small Screens */
+@media (max-width:767px) {
+  .hero > p{
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    font-size: 4vw;
+  }
+  
 }
 
 
@@ -108,16 +131,24 @@
 
 
 
+  .about-section .about-me-content{
+    justify-content:center;
+  }
+
+  .about-section .about-content-section{
+    align-self: center;
+  }
+
   .about-section .about-content-section > h2{
     font-size: 40px;
     font-weight: bold;
-    color: #F5EDDC;
+    color:#576F72;
     text-shadow: 1px 1px #fff;
   }
 
   .about-section .about-content-section > p{
     text-align: justify;
-    color: #F5EDDC;
+    color:#576F72;
     text-shadow: 1px 1px #fff;
   }
 
@@ -204,20 +235,19 @@
     }
 
     /* Finaly in large screen desktop */
-    /* Image */
-    @media (min-width:901px) {
-      .about-section .about-me-content .about-img-section{
-        display: flex;
-        justify-content: center;
+    /* Content Container  */
+    @media (min-width:901px) and (max-width:1000px) {
+      .about-section .about-me-content{
+        top: 6%;
+       display: grid;
+       grid-template-columns: 1fr 2fr;
       }
     }
 
     /* Content */
-    @media (min-width:901px) {
+    @media (min-width:901px) and (max-width:1000px) {
       .about-section .about-me-content .about-content-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-self: center;
       }
     }
 
@@ -239,25 +269,6 @@
 
 
 
-/* Strat Contact-me */
-.contact-me{
-  background-color: #D9D9D9;
-}
-
-
-#social-accounts{
-  border-left: 1px solid #000000;
-}
-
-@media (max-width:600px){
-  .contact-me a > i {
-    padding: 10px 0;
-    margin-bottom: 20px;
-  }  
-}
-
-
-/* End Contact-me */
 
 /* Strat my-portfolio section */
 .my-portfolio{
@@ -273,7 +284,7 @@
 
 .my-portfolio .card a > img{
   background-color: #000000;
-  opacity: .8;
+  opacity: .5;
   transition: all .7s; 
 }
 
@@ -306,25 +317,60 @@
   color: #fff;
 }
 
-@media (max-width:600px){
-  .footer-section > p{
-    display: inline-block;
+
+
+/* Middiam and large screen */
+@media (min-width:767px) {
+  /* Social Icons */
+  .social-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 5%;
+      align-items: center;
+  }
+  
+}
+
+/* Middiam and large screen */
+@media (min-width:767px) {
+  /* Copyright */
+  .copyright{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end
   }
 
 }
 
 
+@media (max-width:767px) {
+  /* Social Icons */
+  .social-icons > div{
+      margin: 5% 0;
+  }
+  
+}
+
+
+
+
+@media (max-width:600px){
+  .footer-section > p{
+    display: inline-block;
+  }
+  
+}
+
+
+/* Appering Social Accounts in mobile device */
+/* @media (max-width:600px){
+  .contact-me a > i {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }  
+} */
 
 /* Footer section */
-
-
-/* Start Some media query for responsive */
-@media (max-width:450px){
-  body{
-    width:calc(360px + 180px);
-  }
-};
-
-
-/* End Some media query for responsive */
 
